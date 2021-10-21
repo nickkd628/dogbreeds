@@ -1,12 +1,36 @@
+const $ = document.querySelector.bind(document);
 
-onload = function () {
-    fetch('https://dog.ceo/api/breeds/list/all', {
-        method: ' GET',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ breed: this.value })
-    })
+function showImage() {
+    var breed = this.innerText;
+    var priorSelected = $('.selceted');
+
+    if (priorSelected ) {
+        priorSelected.className = '';
+    }
+    this.classList.add('selected');
+    fetch(`https://dog.ceo/api/breed/${breed}/images/random`)
+        .then(r => r.json())
+        .then(data => {
+        $('#dog').src = data.message;
+
+    });
+}
+function createButton(txt) {
+    var btn = document.createElement('button');
+    btn.innerText = txt;
+    $('#button').appendChild(btn);
+    btn.onclick = showImage;
+
+}
+
+window.onload = function () {
+
+    fetch('https://dog.ceo/api/breeds/list/all')
         .then(res => res.json())
-        .then(data => console.log(data));
+        .then(data => {
+            Object.keys(data.message)
+                .forEach(createButton);
+        })
 
 }
 
