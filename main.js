@@ -2,7 +2,7 @@ const $ = document.querySelector.bind(document);
 
 function showImage() {
     var breed = this.innerText;
-    var priorSelected = $('.selceted');
+    var priorSelected = $('.selected');
 
     if (priorSelected ) {
         priorSelected.className = '';

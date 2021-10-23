@@ -1,7 +1,38 @@
-header{
-    background-color:blue;
-} 
+header {
+    font-size: 19px;
+    margin: auto;
+    width: 50%;
+    border: 3px solid transparent;
+    padding: 20px;
+    text-align: center;
+    color: aqua
+}
 
-button{
+img.animated-gif {
+    width: 120px;
+    height: auto;
+}
 
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    height: 75%;
+}
+
+button {
+   
+    background: linear-gradient(to bottom, #25395C, #2787EA, #1C67D2, #A4B0FF, #EA7166, #FCA78A);
+    font-size: 13px;
+    margin: auto;
+    padding: 30px 30px 30px 30px;
+    color: aqua;
+}
+.selected {
+    color: yellow;
+}
+body {
+    background: linear-gradient(to bottom, #25395C, #2787EA, #1C67D2, #A4B0FF, #EA7166, #FCA78A);
+    
 }
