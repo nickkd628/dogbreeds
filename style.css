@@ -17,22 +17,47 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 65%;
-    height: 75%;
+    width: 50%;
+    height: 65%;
 }
 
 button {
-   
-    background: linear-gradient(to bottom, #25395C, #2787EA, #1C67D2, #A4B0FF, #EA7166, #FCA78A);
+   width: 125px;
+    background: linear-gradient(to right, rgba(20,245,223,1) 35%, rgba(0,212,255,1) 100%);
+    border-radius: 40px;
+    box-shadow: 0 6px #0000CD;
     font-size: 13px;
-    margin: auto;
-    padding: 30px 30px 30px 30px;
-    color: aqua;
+    margin: 5px;
+    padding: 25px 15px 25px 15px;
+    color: white;
 }
 .selected {
     color: yellow;
 }
 body {
-    background: linear-gradient(to bottom, #25395C, #2787EA, #1C67D2, #A4B0FF, #EA7166, #FCA78A);
+    background: linear-gradient(to bottom, #25395C, #2787EA, #1C67D2, #A4B0FF, #eb4e40, #FCA78A);
     
+}
+#comments {
+    width: 100%;
+    border: solid 2px black;
+}
+
+.comment {
+    border: solid 1px black;
+    margin: 1px;
+    padding: 5px;
+}
+
+.error {
+    color: red;
+}
+
+a{
+    color:blue;
+    cursor: pointer;
+}
+#loginBtn {
+ background: linear-gradient(to right, #eb4e40, #FCA78A);
+ color: black;
 }
